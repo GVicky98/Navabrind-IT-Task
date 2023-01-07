@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    padding: 1em;
+    background: linear-gradient(-210deg,#653239,#E2D4BA 160%);
+    min-height: 100vh;
+}
+.container .username, .container .password{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+.username label, .password label{
+    flex: 1;
+}
+.wrapper .title{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.5rem;
+    padding: 1em;
+    color: #fff;
+    text-shadow: 2px 2px 2px #111;
+}
+.container{
+    max-width: 700px;
+    min-width: 500px;    
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 8px #111;
+    border-radius: 10px;
+    padding: 1.2em;
+    color: #fff;
+}
+.container>div{
+    padding: 0.5em;
+}
+input{
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: 1px solid white;      
+    color: #fff;
+    background: #976f65;
+}
+.container label{
+    font-size: 1.2em;
+    text-shadow: 1px 1px 5px #111;
+    font-weight: 600;
+}
+::placeholder{
+    color: #fff;
+    font-size: 1rem;
+}
+.container .signupBtn{
+    width: 50%;
+    margin: auto;
+}
+.container .signupBtn input{
+    font-size: 1.3em;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #AF7A6D;
+    padding: 1rem;
+}
+.container .signupBtn input:hover{
+    background-color: #E2D4BA;
+    color: #653239;
+}
+input:focus{
+    background-color: #E2D4BA;
+    color: #653239;
+}
+input:focus::placeholder{
+    color: #653239;
+}
+.container .login{
+    text-align: center;
+    margin: 1em;
+}
+.container .login a{
+    color: #fff;
+    text-decoration: underline #653239;    
+}
+.container .login a:hover{
+    color: #653239;
+    text-decoration: underline #fff;    
+}
+#passError{
+    margin: 0.5em auto;
+    color: #ff0000;
+    text-align: center;
+    background-color: #E2D4BA;
+    width: max-content;
+    font-weight: 600;
+    display: none;
+}
+@media screen and (max-width:600px) {
+    .container{
+        min-width: 350px;
+    }
+}

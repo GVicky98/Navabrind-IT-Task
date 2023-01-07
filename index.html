@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <h2>CREATE ACCOUNT</h2>
+        </div>
+        <form action="login.html" onsubmit=" return onRegister()">
+            <div class="container">
+                <div class="username">
+                 <label for="firstname">
+                    First Name <br>
+                    <input type="text" name="firstname" id="firstname" minlength="3" required placeholder="Enter First Name">
+                </label>   
+                <label for="lastname">
+                   Last Name <br>
+                   <input type="text" name="lastname" id="lastname" minlength="3" required placeholder="Enter Last Name">
+                </label>
+                </div>
+
+                <div class="email">
+                    <label for="email">
+                        Email <br>
+                        <input type="email" name="email" id="email" required placeholder="Enter Your Email">
+                    </label>
+                </div>
+
+                <div class="mobno">
+                    <label for="mobno">
+                        Mobile <br>
+                        <input type="tel" name="mobno" id="mobno" required pattern="[6-9]{1}[0-9]{9}" placeholder="Enter Your Mobile Number">
+                    </label>
+                </div>
+
+                <div class="password">
+                    <label for="password1">
+                        Create new Password <br>
+                        <input type="password" name="password1" minlength="5" id="password1" required placeholder="Enter Password">
+                    </label>
+                    <label for="password2">
+                        Confirm Password<br>
+                        <input type="password" name="password2" minlength="5" id="password2" required placeholder="Re-enter Password">
+                    </label>
+                </div>
+                <div id="passError">
+                    Password is Mismatching
+                </div>
+                <div class="signupBtn">
+                    <input type="submit" value="Register" id="signupBtn">
+                </div>
+                <div class="login">
+                    <span>Already have an Account?</span>
+                    <span><a href="login.html">Login here!</a></span>
+                </div>
+            </div>      <!-- container -->
+        </form>
+        
+    </div>          <!-- wrapper -->
+</body>
+<script src="signup.js"></script>
+</html>

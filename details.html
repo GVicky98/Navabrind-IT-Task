@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User's Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="details.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <h2>PROFILE DETAILS</h2>
+            <h3><a href="login.html">Logout</a></h3>
+        </div>
+        <div class="container">
+            <h2 id="welcome"></h2> 
+            <br>
+            <h2>Click the button below to view your profile details</h2>
+            <br>
+            <div style="display: flex; justify-content: center;">
+                <button id="getDetails">Get Details</button>
+            </div>
+            <div id="details">
+                <table rules="all">
+                    <tr>
+                        <th colspan="2">
+                            DETAILS
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            First Name
+                        </td>
+                        <td id="firstname"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Last Name
+                        </td>
+                        <td id="lastname"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Email
+                        </td>
+                        <td id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Number</td>
+                        <td id="mobno"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>      <!-- container -->    
+    </div>          <!-- wrapper -->
+</body>
+<script src="details.js"></script>
+</html>
